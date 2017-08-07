@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+/*Animation Scheme */
+@keyframes manyColor {
+    0%   {background-color: #1a53ff;}
+    25%  {background-color: #4747d1;}
+    50%  {background-color: #751aff;}
+    100% {background-color: #0077b3;}
+}
+
+
+.rqm-container {
+  width: 100%;
+  overflow:hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  animation-name: manyColor;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.rqm-container>h1 {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 4em;
+  color: #ffffff;
+}
+
+.rqm-container #quote {
+  padding: 10px;
+  width: 600px;
+  max-width: 600px;
+  background: transparent;
+  color: #ffffff;
+  border: 5px solid rgba(255,255,255, .3);
+  border-radius: 10px;
+}
+
+.rqm-container #body {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  padding: 30px;
+  position: relative;
+}
+
+
+.rqm-container #author {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: right;
+  font-style: italic;
+}
+
+.rqm-container #control {
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#control .btn {
+  margin: 10px;
+  flex-grow: 1;
+  font-size: 1.5em;
+}
+
+a, a:link, a:active, a:visited a:hover{
+  color: #ffffff !important;
+  cursor: pointer;
+}
+
+#btn-next {
+  background: transparent;
+  color: #ffffff;
+  margin: 30px;
+  border: none;
+}
+
+#btn-tweet {
+  margin: 30px;
+}
+
+#footer p {
+  color: #aaa;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .rqm-container #quote {
+        width: 100%;
+    }
+}
